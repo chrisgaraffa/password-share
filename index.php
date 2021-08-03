@@ -21,7 +21,7 @@ if (!verify_server()) {
 #region twig init
 $twig_loader = new FilesystemLoader('./templates');
 $twig = new Environment($twig_loader, [
-	'cache' => './twig_cache'
+	//'cache' => './twig_cache'
 ]);
 $main_template = $twig->load('main.twig');
 #endregion
