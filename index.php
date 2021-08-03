@@ -27,4 +27,4 @@ $main_template = $twig->load('main.twig');
 #endregion
 
 
-echo $main_template->render();
+echo $main_template->render(['recipient' => $_ENV['RECIPIENT_NAME']]);
