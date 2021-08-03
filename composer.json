@@ -1,5 +1,6 @@
 {
 	"require": {
-		"bramus/ansi-php": "*"
+		"bramus/ansi-php": "*",
+		"twig/twig": "^3.0"
 	}
 }
