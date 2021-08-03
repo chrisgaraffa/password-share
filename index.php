@@ -8,7 +8,7 @@ use Twig\Environment;
 
 /* Use dotenv to load the .env file from the directory above this one */
 try {
-	$dotenv = Dotenv\Dotenv::createImmutable('/');
+	$dotenv = Dotenv\Dotenv::createImmutable('../');
 	$dotenv->load();
 } catch (Dotenv\Exception\InvalidPathException $e) {
 	die('Make sure your .env file is in the directory above index.php (and not accessible by the webserver).');
